@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 68px;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1em;
+  column-gap: 1.5em;
+  text-transform: uppercase;
+  height: 68px;
+  width: 100%;
+  background-color: yellow;
+  top: 0;
+}
+
+.container {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 68px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textWrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navbar__item:hover {
+  cursor: pointer;
+}
+
+.push-right {
+  margin-right: auto;
+  font-size: 1.3rem;
+}
+
+.grid-container {
+  display: flex;
+  height: calc(100vh - 68px);
+}
+
+.divRight {
+  background: url(../img/home_nosotros.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+.divLeft {
+  flex: 1;
+  width: 50%;
+  background: #011013;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.block-text {
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+.block-text-end {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2em;
+}
